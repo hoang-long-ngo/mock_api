@@ -1,0 +1,42 @@
+[
+   {
+       "name": "sucks",
+       "datatype": "event",
+       "searchableDays": 7,
+       "maxDataSizeMB": 0,
+       "totalEventCount": "0",
+       "totalRawSizeMB": "0"
+   },
+   {
+       "name": "lastchanceindex",
+       "datatype": "event",
+       "searchableDays": 1095,
+       "maxDataSizeMB": 0,
+       "totalEventCount": "0",
+       "totalRawSizeMB": "0"
+   },
+   {
+       "name": "main",
+       "datatype": "event",
+       "searchableDays": 1095,
+       "maxDataSizeMB": 0,
+       "totalEventCount": "0",
+       "totalRawSizeMB": "0"
+   },
+   {
+       "name": "splunklogger",
+       "datatype": "event",
+       "searchableDays": 1095,
+       "maxDataSizeMB": 0,
+       "totalEventCount": "0",
+       "totalRawSizeMB": "0"
+   },
+   {
+       "name": "summary",
+       "datatype": "event",
+       "searchableDays": 1095,
+       "maxDataSizeMB": 0,
+       "totalEventCount": "0",
+       "totalRawSizeMB": "0"
+   }
+]

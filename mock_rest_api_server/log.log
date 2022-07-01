@@ -1,0 +1,126 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [28/Jun/2022 13:17:14] "GET /test HTTP/1.1" 200 -
+2022-06-28 13:20:34,289  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-28 13:20:39,882 serverlog
+2022-06-28 13:20:39,883 127.0.0.1 - - [28/Jun/2022 13:20:39] "GET /test HTTP/1.1" 200 -
+2022-06-28 13:20:51,946 serverlog
+2022-06-28 13:20:51,947 127.0.0.1 - - [28/Jun/2022 13:20:51] "GET /test HTTP/1.1" 200 -
+2022-06-28 13:22:39,573 127.0.0.1 - - [28/Jun/2022 13:22:39] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-28 13:23:59,401  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-28 13:24:02,506 Exception on /test [GET]
+Traceback (most recent call last):
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: get_test() missing 1 required positional argument: 'request'
+2022-06-28 13:24:02,510 127.0.0.1 - - [28/Jun/2022 13:24:02] "[35m[1mGET /test HTTP/1.1[0m" 500 -
+2022-06-28 13:24:37,695  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-28 13:24:52,608 Exception on /test [GET]
+Traceback (most recent call last):
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+TypeError: get_test() missing 1 required positional argument: 'request'
+2022-06-28 13:24:52,609 127.0.0.1 - - [28/Jun/2022 13:24:52] "[35m[1mGET /test HTTP/1.1[0m" 500 -
+2022-06-28 13:25:36,295  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-28 13:25:39,008 log
+2022-06-28 13:25:39,009 127.0.0.1 - - [28/Jun/2022 13:25:39] "GET /test HTTP/1.1" 200 -
+2022-06-28 13:28:09,947  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-28 13:28:16,612 {'method': 'GET', 'scheme': 'http', 'server': ('127.0.0.1', 5000), 'root_path': '', 'path': '/test', 'query_string': b'', 'headers': EnvironHeaders([('User-Agent', 'Mozilla/5.0 (Windows NT; Windows NT 10.0; de-DE) WindowsPowerShell/5.1.19041.1682'), ('Host', 'localhost:5000'), ('Connection', 'Keep-Alive')]), 'remote_addr': '127.0.0.1', 'environ': {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=744>, 'wsgi.errors': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, 'wsgi.multithread': True, 'wsgi.multiprocess': False, 'wsgi.run_once': False, 'werkzeug.socket': <socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 5000), raddr=('127.0.0.1', 62545)>, 'SERVER_SOFTWARE': 'Werkzeug/2.1.2', 'REQUEST_METHOD': 'GET', 'SCRIPT_NAME': '', 'PATH_INFO': '/test', 'QUERY_STRING': '', 'REQUEST_URI': '/test', 'RAW_URI': '/test', 'REMOTE_ADDR': '127.0.0.1', 'REMOTE_PORT': 62545, 'SERVER_NAME': '127.0.0.1', 'SERVER_PORT': '5000', 'SERVER_PROTOCOL': 'HTTP/1.1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT; Windows NT 10.0; de-DE) WindowsPowerShell/5.1.19041.1682', 'HTTP_HOST': 'localhost:5000', 'HTTP_CONNECTION': 'Keep-Alive', 'werkzeug.request': <Request 'http://localhost:5000/test' [GET]>}, 'shallow': False, 'url_rule': <Rule '/test' (OPTIONS, GET, HEAD) -> get_test>, 'view_args': {}, 'host': 'localhost:5000', 'url': 'http://localhost:5000/test'}
+2022-06-28 13:28:16,613 127.0.0.1 - - [28/Jun/2022 13:28:16] "GET /test HTTP/1.1" 200 -
+2022-06-28 13:33:26,586  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-28 13:33:35,878 ['method', 'scheme', 'server', 'root_path', 'path', 'query_string', 'headers', 'remote_addr', 'environ', 'shallow', 'url_rule', 'view_args']
+2022-06-28 13:33:35,878 127.0.0.1 - - [28/Jun/2022 13:33:35] "GET /test HTTP/1.1" 200 -
+2022-06-28 13:43:30,217  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-28 13:43:39,555 Exception on /adminconfig/v2/indexes [GET]
+Traceback (most recent call last):
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a list.
+2022-06-28 13:43:39,557 127.0.0.1 - - [28/Jun/2022 13:43:39] "[35m[1mGET /adminconfig/v2/indexes HTTP/1.1[0m" 500 -
+2022-06-28 13:44:28,380  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-28 13:44:32,819 Exception on /adminconfig/v2/indexes [GET]
+Traceback (most recent call last):
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\ngoh\Desktop\mock_rest_api_server\flask\app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a list.
+2022-06-28 13:44:32,823 127.0.0.1 - - [28/Jun/2022 13:44:32] "[35m[1mGET /adminconfig/v2/indexes HTTP/1.1[0m" 500 -
+2022-06-28 13:46:36,194  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-28 13:46:40,670 127.0.0.1 - - [28/Jun/2022 13:46:40] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-28 13:47:06,125 127.0.0.1 - - [28/Jun/2022 13:47:06] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 01:33:32,422  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-29 01:33:51,497 127.0.0.1 - - [29/Jun/2022 01:33:51] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 01:35:54,887  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-29 23:01:40,958  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-29 23:03:16,526 127.0.0.1 - - [29/Jun/2022 23:03:16] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 23:06:42,501 127.0.0.1 - - [29/Jun/2022 23:06:42] "[33mGET / HTTP/1.1[0m" 404 -
+2022-06-29 23:06:42,554 127.0.0.1 - - [29/Jun/2022 23:06:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-06-29 23:06:49,501 127.0.0.1 - - [29/Jun/2022 23:06:49] "[33mGET / HTTP/1.1[0m" 404 -
+2022-06-29 23:06:59,006 127.0.0.1 - - [29/Jun/2022 23:06:59] "[33mGET /aminconfig/v2/indexes HTTP/1.1[0m" 404 -
+2022-06-29 23:09:11,861 127.0.0.1 - - [29/Jun/2022 23:09:11] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 23:09:25,661 127.0.0.1 - - [29/Jun/2022 23:09:25] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 23:09:34,255 127.0.0.1 - - [29/Jun/2022 23:09:34] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 23:09:44,229 127.0.0.1 - - [29/Jun/2022 23:09:44] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 23:09:59,803 127.0.0.1 - - [29/Jun/2022 23:09:59] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 23:11:15,776 127.0.0.1 - - [29/Jun/2022 23:11:15] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 23:11:36,344 127.0.0.1 - - [29/Jun/2022 23:11:36] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 23:40:55,290 127.0.0.1 - - [29/Jun/2022 23:40:55] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 23:43:13,206 127.0.0.1 - - [29/Jun/2022 23:43:13] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 23:43:45,741  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-29 23:43:52,090 127.0.0.1 - - [29/Jun/2022 23:43:52] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 23:43:58,348 127.0.0.1 - - [29/Jun/2022 23:43:58] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 23:47:18,862 127.0.0.1 - - [29/Jun/2022 23:47:18] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 23:48:28,172 127.0.0.1 - - [29/Jun/2022 23:48:28] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-29 23:48:41,396 127.0.0.1 - - [29/Jun/2022 23:48:41] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 00:05:50,079 127.0.0.1 - - [30/Jun/2022 00:05:50] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 00:06:00,053 127.0.0.1 - - [30/Jun/2022 00:06:00] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 00:06:37,842 127.0.0.1 - - [30/Jun/2022 00:06:37] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 00:07:09,474 127.0.0.1 - - [30/Jun/2022 00:07:09] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 00:07:20,051 127.0.0.1 - - [30/Jun/2022 00:07:20] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 00:19:20,861 127.0.0.1 - - [30/Jun/2022 00:19:20] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 00:55:43,926 127.0.0.1 - - [30/Jun/2022 00:55:43] "[31m[1mPOST /adminconfig/v2/indexes HTTP/1.1[0m" 405 -
+2022-06-30 00:55:45,974 127.0.0.1 - - [30/Jun/2022 00:55:45] "[31m[1mPOST /adminconfig/v2/indexes HTTP/1.1[0m" 405 -
+2022-06-30 00:55:48,029 127.0.0.1 - - [30/Jun/2022 00:55:48] "[31m[1mPOST /adminconfig/v2/indexes HTTP/1.1[0m" 405 -
+2022-06-30 00:55:50,074 127.0.0.1 - - [30/Jun/2022 00:55:50] "[31m[1mPOST /adminconfig/v2/indexes HTTP/1.1[0m" 405 -
+2022-06-30 00:55:52,130 127.0.0.1 - - [30/Jun/2022 00:55:52] "[31m[1mPOST /adminconfig/v2/indexes HTTP/1.1[0m" 405 -
+2022-06-30 00:55:54,183 127.0.0.1 - - [30/Jun/2022 00:55:54] "[31m[1mPOST /adminconfig/v2/indexes HTTP/1.1[0m" 405 -
+2022-06-30 00:55:56,237 127.0.0.1 - - [30/Jun/2022 00:55:56] "[31m[1mPOST /adminconfig/v2/indexes HTTP/1.1[0m" 405 -
+2022-06-30 00:55:58,272 127.0.0.1 - - [30/Jun/2022 00:55:58] "[31m[1mPOST /adminconfig/v2/indexes HTTP/1.1[0m" 405 -
+2022-06-30 00:56:00,324 127.0.0.1 - - [30/Jun/2022 00:56:00] "[31m[1mPOST /adminconfig/v2/indexes HTTP/1.1[0m" 405 -
+2022-06-30 00:56:02,372 127.0.0.1 - - [30/Jun/2022 00:56:02] "[31m[1mPOST /adminconfig/v2/indexes HTTP/1.1[0m" 405 -
+2022-06-30 00:56:04,422 127.0.0.1 - - [30/Jun/2022 00:56:04] "[31m[1mPOST /adminconfig/v2/indexes HTTP/1.1[0m" 405 -
+2022-06-30 00:56:06,484 127.0.0.1 - - [30/Jun/2022 00:56:06] "[31m[1mPOST /adminconfig/v2/indexes HTTP/1.1[0m" 405 -
+2022-06-30 00:56:08,542 127.0.0.1 - - [30/Jun/2022 00:56:08] "[31m[1mPOST /adminconfig/v2/indexes HTTP/1.1[0m" 405 -
+2022-06-30 00:56:10,583 127.0.0.1 - - [30/Jun/2022 00:56:10] "[31m[1mPOST /adminconfig/v2/indexes HTTP/1.1[0m" 405 -
+2022-06-30 09:07:20,886 127.0.0.1 - - [30/Jun/2022 09:07:20] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 09:19:42,030 127.0.0.1 - - [30/Jun/2022 09:19:42] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 09:20:07,230 127.0.0.1 - - [30/Jun/2022 09:20:07] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 09:20:14,358 127.0.0.1 - - [30/Jun/2022 09:20:14] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 09:39:41,576 127.0.0.1 - - [30/Jun/2022 09:39:41] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 09:58:09,237 127.0.0.1 - - [30/Jun/2022 09:58:09] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 17:38:32,068  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-06-30 17:38:49,762 127.0.0.1 - - [30/Jun/2022 17:38:49] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 17:38:57,261 127.0.0.1 - - [30/Jun/2022 17:38:57] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
+2022-06-30 22:22:59,885 127.0.0.1 - - [30/Jun/2022 22:22:59] "GET /adminconfig/v2/indexes HTTP/1.1" 200 -
